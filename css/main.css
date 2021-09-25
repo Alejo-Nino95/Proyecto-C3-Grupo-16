@@ -1,0 +1,49 @@
+.mainBox{
+   width: auto;
+   height: auto;
+   border: 2px solid rgb(236, 172, 172);
+   display:flex;
+   display:inline-flex;
+   
+   flex-wrap: wrap;
+
+}
+
+.caja1{
+   
+   padding: 20px;
+   width: 200px;
+   height: 40px;
+   margin: 10px;
+   background-color:rgb(136, 85, 85);
+   color: #fff;
+
+}
+
+.caja2{
+   order:1;
+   padding: 20px;
+   width: 200px;
+   height: 40px;
+   margin: 10px;
+   background-color:rgb(235, 207, 207);
+   color: #fff;
+}
+
+.caja3{
+   padding: 20px;
+   width: 200px;
+   height: 40px;
+   margin: 10px;
+   background-color:rgb(53, 218, 21);
+   color: #fff;   
+}
+
+.caja4{
+   padding: 20px;
+   width: 200px;
+   height: 40px;
+   margin: 10px;
+   background-color:rgb(189, 12, 12);
+   color: #fff;
+}
