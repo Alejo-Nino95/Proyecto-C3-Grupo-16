@@ -1,0 +1,1 @@
+git pull              -> sirve para traer los cambios desde el repositorio remoto en la rama que se está parado 
