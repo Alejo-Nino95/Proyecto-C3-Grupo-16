@@ -1,0 +1,35 @@
+.login{
+    width: 40%;
+    max-width: 300px;
+    
+    background-color: rgb(122, 191, 212);
+    border: 1px solid rgb(49, 44, 44);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20vh;
+    border-radius: 5px;
+ }
+ .espacio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+ }
+ @media(max-width:500px){
+    .login{
+        width: 100%;
+        
+        background-color: rgb(238, 238, 228);
+        border: 1px solid rgb(49, 44, 44);
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 20vh;
+    
+     }
+ }
+
