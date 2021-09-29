@@ -1,7 +1,6 @@
 .login{
     width: 40%;
     max-width: 300px;
-    
     background-color: rgb(122, 191, 212);
     border: 1px solid rgb(49, 44, 44);
     justify-content: center;
@@ -17,10 +16,14 @@
     margin-bottom: 10px;
 
  }
- @media(max-width:500px){
+
+ .contenedor-login{
+    background-color: yellow;
+ }
+
+ @media(max-width:400px){
     .login{
         width: 100%;
-        
         background-color: rgb(238, 238, 228);
         border: 1px solid rgb(49, 44, 44);
         justify-content: center;
@@ -33,3 +36,6 @@
      }
  }
 
+button{
+   width: 100%;
+}
