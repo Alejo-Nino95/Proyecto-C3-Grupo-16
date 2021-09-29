@@ -7,7 +7,7 @@ function Login() {
     return (
       <div className="Login">
         <div className="contenedor-login">
-
+          <h4>Bienvenido</h4>
          <div className="img-login">
            <img src={logo} alt="" />
          </div>
@@ -16,6 +16,8 @@ function Login() {
            <form action="">
             <input type="text" placeholder="Usuario" />
             <input type="password"  placeholder="Clave"/>
+            <input type="submit" value="Ingresar "/>
+            <input type="submit" value="Google "/>
           </form>
          </div>
 
