@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './interfazGeneral.css';
 import logo from '../imagenes/logo.png'; 
 import Login from './Login';
+import Usuario from './Usuario';
 
 /*  ----------------------------------------------------------------------------------------------
  *
@@ -49,7 +50,7 @@ function InterfazPrincipal() {
                      <h4>EN ESTA SECCION APARECERA EL COMPONENTE SELECCIONADO</h4>
                  </div>
                  <div className="vista-componente">
-                     <Login></Login>
+                     <Usuario></Usuario>
                  </div>
           </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 //import logo from "./logo.svg";
 import "./Usuario.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 //https://www.youtube.com/watch?v=F4MdhfMn2vs
 
 import {
