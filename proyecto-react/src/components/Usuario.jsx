@@ -1,12 +1,8 @@
 import React from "react";
 //import logo from "./logo.svg";
 import "./Usuario.css";
-<<<<<<< HEAD
-import "bootstrap/dist/css/bootstrap.min.css";
-=======
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
->>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
-//https://www.youtube.com/watch?v=F4MdhfMn2vs
+
 
 import {
   Table,
@@ -20,12 +16,12 @@ import {
 } from "reactstrap";
 
 const data = [
-  { id: 12345678, personaje: "Naruto", anime: "Naruto" },
-  { id: 2, personaje: "Goku", anime: "Dragon Ball" },
-  { id: 3, personaje: "Kenshin Himura", anime: "Rurouni Kenshin" },
-  { id: 4, personaje: "Monkey D. Luffy", anime: "One Piece" },
-  { id: 5, personaje: "Edward Elric", anime: "Fullmetal Alchemist: Brotherhood"},
-  { id: 6, personaje: "Seto Kaiba", anime: "Yu-Gi-Oh!" },
+  { id: 11111111, nombre: "Adolfo", apellido: "Galvan", correo: "a.g@ram.com", rol:"admin", estado:"autorizado"},
+  { id: 22222222, nombre: "Carlos", apellido: "Prada", correo: "c.p@ram.com", rol:"vendedor", estado:"autorizado"},
+  { id: 33333333, nombre: "Mario", apellido: "Martinez", correo: "m.m@.com", rol:"vendedor", estado:"autorizdo"},
+  { id: 44444444, nombre: "Andres", apellido: "Perez", correo: "a.p@ram.com", rol:"vendedor", estado:"no autorizado"},
+  { id: 55555555, nombre: "Felipe", apellido: "Rubiano ", correo: "f.r@ram.com", rol:"vendedor", estado:"autorizado"},
+  { id: 66666666, nombre: "Marta", apellido: "Mantilla", correo: "m.m@ram.com", rol:"admin", estado:"pendiente"},
 ];
 
 class App extends React.Component {
@@ -35,8 +31,12 @@ class App extends React.Component {
     modalInsertar: false,
     form: {
       id : "",
-      Nombre: "",
-      Apellido: "",
+      nombre: "",
+      apellido: "",
+      correo: "",
+      rol: "",
+      estado: "",
+      
     },
   };
 
@@ -66,8 +66,12 @@ class App extends React.Component {
     var arreglo = this.state.data;
     arreglo.map((registro) => {
       if (dato.id == registro.id) {
-        arreglo[contador].personaje = dato.personaje;
-        arreglo[contador].anime = dato.anime;
+        arreglo[contador].nombre = dato.nombre;
+        arreglo[contador].apellido = dato.apellido;
+        arreglo[contador].correo = dato.correo;
+        arreglo[contador].rol = dato.rol;
+        arreglo[contador].estado = dato.estado;
+       
       }
       contador++;
     });
@@ -91,7 +95,7 @@ class App extends React.Component {
 
   insertar= ()=>{
     var valorNuevo= {...this.state.form};
-    valorNuevo.id=this.state.data.length+1;
+    valorNuevo.id=this.state.data;
     var lista= this.state.data;
     lista.push(valorNuevo);
     this.setState({ modalInsertar: false, data: lista });
@@ -106,103 +110,11 @@ class App extends React.Component {
     });
   };
 
-<<<<<<< HEAD
-   toggleMenu= ()=>{
-    let toggle= document.querySelector('.toggle');
-    let navigation = document.querySelector('.navigation');
-    let main = document.querySelector('.main');
-    toggle.classList.toggle('active');
-    navigation.classList.toggle('active');
-    main.classList.toggle('active');
- }
-
-
-=======
->>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
   render() {
     
     return (
       <>
-<<<<<<< HEAD
-        <div class="container">
-       <div class="navigation">
-         <ul>
-             <li>
-                <a href="#">
-                <span class="icon"><i class="fa fa-hashtag" aria-hidden="true"></i></span>
-                <span class="title">Numer016</span>
-                </a> 
-             </li>
-             <li>
-                <a href="#">
-                <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-                <span class="title">Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <span class="icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
-                <span class="title">Usuarios</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
-                <span class="title">Mensajes</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
-                <span class="title">Ayuda</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
-                <span class="title">Configuracion</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <span class="icon"><i class="fa fa-key" aria-hidden="true"></i></span>
-                <span class="title">ContraseÃ±a</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <span class="icon"><i class="fa fa-times" aria-hidden="true"></i>
-                </span>
-                <span class="title">Salir</span>
-                </a>
-            </li>
-         </ul>   
-       </div>
-
-       <div class="main">
-           <div class="topbar">
-               <div class="toggle" onClick={()=>this.toggleMenu()}></div>
-               
-               <div class="search">
-                  <label>
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input type="text" placeholder="Search here" />
-                       
-                  </label>
-                   
-                </div>
-              
-               <div class="user">
-                <img src="user.jpg" />
-               </div>
-           </div>
-           <div class ="cardBox">
-               <div class="card">
-               <Container>
-          <div>Interfaz de Usuario</div>
-=======
         <Container>
->>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
         <br />
           <Button color="success" onClick={()=>this.mostrarModalInsertar()}>Crear</Button>
           <br />
@@ -214,6 +126,8 @@ class App extends React.Component {
                 <th>Nombre</th>
                 <th>Apellido</th>
                 <th>Correo</th>
+                <th>Rol</th>
+                <th>Estado</th>
                 <th>Acción</th>
               </tr>
             </thead>
@@ -222,13 +136,11 @@ class App extends React.Component {
               {this.state.data.map((dato) => (
                 <tr key={dato.id}>
                   <td>{dato.id}</td>
-                  <td>{dato.personaje}</td>
-                  <td>{dato.anime}</td>
-<<<<<<< HEAD
+                  <td>{dato.nombre}</td>
+                  <td>{dato.apellido}</td>
                   <td>{dato.correo}</td>
-                  
-=======
->>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
+                  <td>{dato.rol}</td>
+                  <td>{dato.estado}</td>                                   
                   <td>
                     <Button
                       color="primary"
@@ -239,32 +151,14 @@ class App extends React.Component {
                     <Button color="danger" onClick={()=> this.eliminar(dato)}>Eliminar</Button>
                   </td>
                 </tr>
-<<<<<<< HEAD
-                
-=======
->>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
               ))}
             </tbody>
           </Table>
         </Container>
 
-<<<<<<< HEAD
-               </div>
-           </div>
-
-
-
-       </div>
-
-   </div>
-   
-
-
-=======
->>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
         <Modal isOpen={this.state.modalActualizar}>
           <ModalHeader>
-           <div><h3>Editar Registro</h3></div>
+           <div><h3>Editar Usuario</h3></div>
           </ModalHeader>
 
           <ModalBody>
@@ -277,6 +171,7 @@ class App extends React.Component {
                 className="form-control"
                 readOnly
                 type="text"
+                onChange={this.handleChange}
                 value={this.state.form.id}
               />
             </FormGroup>
@@ -287,10 +182,10 @@ class App extends React.Component {
               </label>
               <input
                 className="form-control"
-                name="personaje"
+                name="nombre"
                 type="text"
                 onChange={this.handleChange}
-                value={this.state.form.personaje}
+                value={this.state.form.nombre}
               />
             </FormGroup>
             
@@ -300,10 +195,46 @@ class App extends React.Component {
               </label>
               <input
                 className="form-control"
-                name="anime"
+                name="apellido"
                 type="text"
                 onChange={this.handleChange}
-                value={this.state.form.anime}
+                value={this.state.form.apellido}
+              />
+            </FormGroup>
+            <FormGroup>
+              <label>
+                Correo: 
+              </label>
+              <input
+                className="form-control"
+                name="correo"
+                type="email"
+                onChange={this.handleChange}
+                value={this.state.form.correo}
+              />
+            </FormGroup>
+            <FormGroup>
+              <label>
+                Rol: 
+              </label>
+              <input
+                className="form-control"
+                name="rol"
+                type="text"
+                onChange={this.handleChange}
+                value={this.state.form.rol}
+              />
+            </FormGroup>
+            <FormGroup>
+              <label>
+                Estado: 
+              </label>
+              <input
+                className="form-control"
+                name="estado"
+                type="text"
+                onChange={this.handleChange}
+                value={this.state.form.estado}
               />
             </FormGroup>
           </ModalBody>
@@ -328,7 +259,7 @@ class App extends React.Component {
 
         <Modal isOpen={this.state.modalInsertar}>
           <ModalHeader>
-           <div><h3>Insertar Personaje</h3></div>
+           <div><h3>Interfaz para Agregar Usuario</h3></div>
           </ModalHeader>
 
           <ModalBody>
@@ -336,12 +267,13 @@ class App extends React.Component {
               <label>
                 Id: 
               </label>
-              
-              <input
+                <input
                 className="form-control"
-                readOnly
+                //readOnly
+                name = "id"
                 type="text"
-                value={this.state.data.length+1}
+                onChange={this.handleChange}
+                //value={this.state.data.id}
               />
             </FormGroup>
             
@@ -351,7 +283,7 @@ class App extends React.Component {
               </label>
               <input
                 className="form-control"
-                name="personaje"
+                name="nombre"
                 type="text"
                 onChange={this.handleChange}
               />
@@ -363,7 +295,40 @@ class App extends React.Component {
               </label>
               <input
                 className="form-control"
-                name="anime"
+                name="apellido"
+                type="text"
+                onChange={this.handleChange}
+              />
+            </FormGroup>
+            <FormGroup>
+              <label>
+                Correo: 
+              </label>
+              <input
+                className="form-control"
+                name="correo"
+                type="email"
+                onChange={this.handleChange}
+              />
+            </FormGroup>
+            <FormGroup>
+              <label>
+                Rol: 
+              </label>
+              <input
+                className="form-control"
+                name="rol"
+                type="text"
+                onChange={this.handleChange}
+              />
+            </FormGroup>
+            <FormGroup>
+              <label>
+                Estado: 
+              </label>
+              <input
+                className="form-control"
+                name="estado"
                 type="text"
                 onChange={this.handleChange}
               />
@@ -375,7 +340,7 @@ class App extends React.Component {
               color="primary"
               onClick={() => this.insertar()}
             >
-              Insertar
+              Agregar
             </Button>
             <Button
               className="btn btn-danger"

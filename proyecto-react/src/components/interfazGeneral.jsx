@@ -28,18 +28,18 @@ function InterfazPrincipal() {
                 </div> 
 
                 <div className="titulo">
-                     <h4>GRUPO 16 VENTAS</h4>
+                     <h4></h4>
                 </div>
 
                 <div className="lista-componentes">
                     <div className="componente">
-                        <h4>Accion 1</h4>
+                        <h4>Usuarios</h4>
                     </div>
                     <div className="componente">
-                        <h4>Accion 2</h4>
+                        <h4>Productos</h4>
                     </div>
                     <div className="componente">
-                        <h4>Accion 3</h4>
+                        <h4>Ventas</h4>
                     </div>
                 </div>
           </div>
@@ -47,7 +47,7 @@ function InterfazPrincipal() {
 
           <div className="vista">
                  <div className="componente-activo">
-                     <h4>EN ESTA SECCION APARECERA EL COMPONENTE SELECCIONADO</h4>
+                     <h4>InterFaz Usuario</h4>
                  </div>
                  <div className="vista-componente">
                      <Usuario></Usuario>
