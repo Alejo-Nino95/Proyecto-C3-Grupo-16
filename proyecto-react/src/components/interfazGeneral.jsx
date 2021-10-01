@@ -33,13 +33,13 @@ function InterfazPrincipal() {
 
                 <div className="lista-componentes">
                     <div className="componente">
-                        <h4>Usuarios</h4>
+                        <h4 className="link-comp"> <a href="">Usuarios</a></h4>
                     </div>
                     <div className="componente">
-                        <h4>Productos</h4>
+                        <h4 className="link-comp"><a href="">Productos</a></h4>
                     </div>
                     <div className="componente">
-                        <h4>Ventas</h4>
+                        <h4 className="link-comp"><a href="">Ventas</a></h4>
                     </div>
                 </div>
           </div>

@@ -34,6 +34,9 @@ body{
     color: black;
 }
 
+
+
+
 .titulo{
     width: 100%;
     display: flex;
@@ -74,6 +77,15 @@ body{
 
 }
 
+
+.componente{
+    margin-top: 20px;
+    
+}
+.componente:hover{
+    background-color: rgb(156, 154, 154);
+}
+
 .componente-activo{
     width: 100%;
     display: flex;
@@ -81,7 +93,8 @@ body{
     flex-wrap: wrap;
 }
 .componente-activo h4{
-    background-color: black;
+    margin-top: 10px;
+    background-color:rgb(126, 42, 42);;
     color: white;
     width: 100%;
     margin-top: 0px;   
@@ -92,7 +105,21 @@ body{
 }
 
 .vista-componente{
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 95%;
+    border-style: solid;
+}
+
+.link-comp{
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
 }
