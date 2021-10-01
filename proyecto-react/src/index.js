@@ -15,11 +15,8 @@ import InterfazGeneral from './components/interfazGeneral'
 
 ReactDOM.render(
   <React.StrictMode>
-<<<<<<< HEAD
     <Usuario/>
-=======
     <InterfazGeneral/>
->>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
   </React.StrictMode>,
   document.getElementById('root')
 );
