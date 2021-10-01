@@ -1,0 +1,98 @@
+/*
+
+Julian Guillermo Zapata Rugeles 
+
+CSS para interfazGeneral 
+
+
+*/
+
+body{
+    background-color: white;
+}
+
+.interfaz-principal{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    height: 100%;
+}
+
+.items{
+    padding-top: 10px;
+    background-color: rgb(126, 42, 42);
+    display: grid;
+    text-align: center;display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista-componentes{
+    justify-content: center;
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: black;
+}
+
+.titulo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.items h4{
+    color: white;
+    width: 80%;
+    text-align: center;
+    
+}
+
+
+.lista-componentes h4{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    
+}
+.vista{
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img-login{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.img-login img{
+    width: 60%;
+
+}
+
+.componente-activo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.componente-activo h4{
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 0px;   
+    padding: 5px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.vista-componente{
+    background-color: wheat;
+    border-radius: 10px;
+    width: 95%;
+}

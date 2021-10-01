@@ -1,7 +1,11 @@
 import React from "react";
 //import logo from "./logo.svg";
 import "./Usuario.css";
+<<<<<<< HEAD
 import "bootstrap/dist/css/bootstrap.min.css";
+=======
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+>>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
 //https://www.youtube.com/watch?v=F4MdhfMn2vs
 
 import {
@@ -102,6 +106,7 @@ class App extends React.Component {
     });
   };
 
+<<<<<<< HEAD
    toggleMenu= ()=>{
     let toggle= document.querySelector('.toggle');
     let navigation = document.querySelector('.navigation');
@@ -112,10 +117,13 @@ class App extends React.Component {
  }
 
 
+=======
+>>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
   render() {
     
     return (
       <>
+<<<<<<< HEAD
         <div class="container">
        <div class="navigation">
          <ul>
@@ -192,6 +200,9 @@ class App extends React.Component {
                <div class="card">
                <Container>
           <div>Interfaz de Usuario</div>
+=======
+        <Container>
+>>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
         <br />
           <Button color="success" onClick={()=>this.mostrarModalInsertar()}>Crear</Button>
           <br />
@@ -213,8 +224,11 @@ class App extends React.Component {
                   <td>{dato.id}</td>
                   <td>{dato.personaje}</td>
                   <td>{dato.anime}</td>
+<<<<<<< HEAD
                   <td>{dato.correo}</td>
                   
+=======
+>>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
                   <td>
                     <Button
                       color="primary"
@@ -225,12 +239,16 @@ class App extends React.Component {
                     <Button color="danger" onClick={()=> this.eliminar(dato)}>Eliminar</Button>
                   </td>
                 </tr>
+<<<<<<< HEAD
                 
+=======
+>>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
               ))}
             </tbody>
           </Table>
         </Container>
 
+<<<<<<< HEAD
                </div>
            </div>
 
@@ -242,6 +260,8 @@ class App extends React.Component {
    
 
 
+=======
+>>>>>>> d94aa007435b9bdb63130f6d86c87c06c980e8b6
         <Modal isOpen={this.state.modalActualizar}>
           <ModalHeader>
            <div><h3>Editar Registro</h3></div>
