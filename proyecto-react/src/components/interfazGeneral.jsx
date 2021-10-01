@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import './interfazGeneral.css';
 import logo from '../imagenes/logo.png'; 
-import Login from './Login';
+
 import Usuario from './Usuario';
 
 /*  ----------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ import Usuario from './Usuario';
 
 
 
-function InterfazPrincipal() {
+function InterfazGeneral() {
     return (
       <div className="interfaz-principal">
 
@@ -57,4 +57,4 @@ function InterfazPrincipal() {
     );
   }
   
-  export default InterfazPrincipal;
+  export default InterfazGeneral;
