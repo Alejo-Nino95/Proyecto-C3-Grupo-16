@@ -95,7 +95,7 @@ class App extends React.Component {
 
   insertar= ()=>{
     var valorNuevo= {...this.state.form};
-    valorNuevo.id=this.state.data;
+    valorNuevo.id=this.state.data.lenght+1;
     var lista= this.state.data;
     lista.push(valorNuevo);
     this.setState({ modalInsertar: false, data: lista });
