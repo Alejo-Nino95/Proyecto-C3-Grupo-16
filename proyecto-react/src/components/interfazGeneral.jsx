@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './interfazGeneral.css';
 import logo from '../imagenes/logo.png'; 
 import Login from './Login';
-import Usuario from './Usuario';
+import Ventas from './Ventas';
 
 /*  ----------------------------------------------------------------------------------------------
  *
@@ -47,10 +47,10 @@ function InterfazPrincipal() {
 
           <div className="vista">
                  <div className="componente-activo">
-                     <h4>InterFaz Usuario</h4>
+                     <h4>InterFaz Ventas</h4>
                  </div>
                  <div className="vista-componente">
-                     <Usuario></Usuario>
+                     <Ventas/>
                  </div>
           </div>
       </div>
