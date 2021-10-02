@@ -273,7 +273,7 @@ class App extends React.Component {
                 name = "id"
                 type="text"
                 onChange={this.handleChange}
-                //value={this.state.data.id}
+                value={this.state.data.id}
               />
             </FormGroup>
             
