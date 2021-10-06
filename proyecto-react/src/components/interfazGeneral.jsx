@@ -1,9 +1,9 @@
 import React from 'react';
-
+import ReactDOM from 'react-dom';
 import './interfazGeneral.css';
 import logo from '../imagenes/logo.png'; 
-
-import Usuario from './Usuario';
+import Login from './Login';
+import Producto from './Producto';
 
 /*  ----------------------------------------------------------------------------------------------
  *
@@ -18,7 +18,7 @@ import Usuario from './Usuario';
 
 
 
-function InterfazGeneral() {
+function InterfazPrincipal() {
     return (
       <div className="interfaz-principal">
 
@@ -28,18 +28,18 @@ function InterfazGeneral() {
                 </div> 
 
                 <div className="titulo">
-                     <h4>GRUPO 16 VENTAS</h4>
+                     <h4></h4>
                 </div>
 
                 <div className="lista-componentes">
                     <div className="componente">
-                        <h4>Accion 1</h4>
+                        <h4 className="link-comp"> <a href="">Facturar</a></h4>
                     </div>
                     <div className="componente">
-                        <h4>Accion 2</h4>
+                        <h4 className="link-comp"><a href="">Productos</a></h4>
                     </div>
                     <div className="componente">
-                        <h4>Accion 3</h4>
+                        <h4 className="link-comp"><a href="">Reportes</a></h4>
                     </div>
                 </div>
           </div>
@@ -47,14 +47,14 @@ function InterfazGeneral() {
 
           <div className="vista">
                  <div className="componente-activo">
-                     <h4>EN ESTA SECCION APARECERA EL COMPONENTE SELECCIONADO</h4>
+                     <h4>InterFaz Ventas</h4>
                  </div>
                  <div className="vista-componente">
-                     <Usuario></Usuario>
+                     <Producto/>
                  </div>
           </div>
       </div>
     );
   }
   
-  export default InterfazGeneral;
+  export default InterfazPrincipal;
