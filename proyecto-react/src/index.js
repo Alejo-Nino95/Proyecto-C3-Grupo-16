@@ -9,7 +9,6 @@ import InterfazGeneral from './components/interfazGeneral';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Usuario/>
     <InterfazGeneral/>
   </React.StrictMode>,
   document.getElementById('root')

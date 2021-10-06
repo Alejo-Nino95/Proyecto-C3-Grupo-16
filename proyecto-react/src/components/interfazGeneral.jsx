@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './interfazGeneral.css';
-import logo from '../imagenes/logo.png'; 
+import logo from '../imagenes/logo.png';
 import Login from './Login';
-import Producto from './Producto';
+import ProductBox from './Producto';
 
 /*  ----------------------------------------------------------------------------------------------
  *
@@ -14,21 +14,21 @@ import Producto from './Producto';
  * @ Julian Guillermo Zapata Rugeles 
  * 
  *  ----------------------------------------------------------------------------------------------
- */ 
+ */
 
 
 
 function InterfazPrincipal() {
     return (
-      <div className="interfaz-principal">
+        <div className="interfaz-principal">
 
-          <div className="items">
+            <div className="items">
                 <div className="img-login">
-                     <img src={logo} alt=""/>
-                </div> 
+                    <img src={logo} alt="" />
+                </div>
 
                 <div className="titulo">
-                     <h4></h4>
+                    <h4></h4>
                 </div>
 
                 <div className="lista-componentes">
@@ -42,19 +42,19 @@ function InterfazPrincipal() {
                         <h4 className="link-comp"><a href="">Reportes</a></h4>
                     </div>
                 </div>
-          </div>
+            </div>
 
 
-          <div className="vista">
-                 <div className="componente-activo">
-                     <h4>InterFaz Ventas</h4>
-                 </div>
-                 <div className="vista-componente">
-                     <Producto/>
-                 </div>
-          </div>
-      </div>
+            <div className="vista">
+                <div className="componente-activo">
+                    <h4>InterFaz Ventas</h4>
+                </div>
+                <div className="vista-componente">
+                    <ProductBox />
+                </div>
+            </div>
+        </div>
     );
-  }
-  
-  export default InterfazPrincipal;
+}
+
+export default InterfazPrincipal;
