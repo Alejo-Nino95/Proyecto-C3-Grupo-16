@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './interfazGeneral.css';
 import logo from '../imagenes/logo.png';
 import Login from './Login';
-import ProductBox from './Producto';
+import Producto from './Producto';
 
 /*  ----------------------------------------------------------------------------------------------
  *
@@ -50,7 +50,7 @@ function InterfazPrincipal() {
                     <h4>InterFaz Ventas</h4>
                 </div>
                 <div className="vista-componente">
-                    <ProductBox />
+                    <Producto />
                 </div>
             </div>
         </div>
