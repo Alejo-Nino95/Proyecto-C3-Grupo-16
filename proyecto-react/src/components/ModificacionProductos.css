@@ -1,0 +1,18 @@
+.Form {
+    padding: 25px;
+}
+
+.row {
+    margin: 25px 0px 25px 0px;
+}
+
+.label {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}

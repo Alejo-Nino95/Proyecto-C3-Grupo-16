@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from 'react';
-// import Link from 'react-router-dom';
-// import axiosClient from '../../config/axiosClient';
+import {useHistory} from 'react-router-dom';
 import Pro from './Productos/pro';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import './Producto.css'
+import ModificacionProductos from './ModificacionProductos';
 
 const Producto = () => {
+
+    const history = useHistory()
+
+    const submit = (e) => {
+        e.preventDefault();
+        history.push('/mod')
+    }
 
     return (
         <div>
@@ -25,7 +32,7 @@ const Producto = () => {
                             <th scope="col">Producto</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Precio</th>
-                            <th scope="col"><Button variant="primary">Añadir Producto</Button></th>
+                            <th scope="col"><Button onClick={submit} variant="primary">Añadir Producto</Button></th>
                         </tr>
                         {Pro.map(index => {
                             return (<>
@@ -35,7 +42,7 @@ const Producto = () => {
                                     </Container></th>
                                     <th scope="col">{index.nombre}</th>
                                     <th scope="col">{index.precio}</th>
-                                    <th scope="col" ><Button variant="success">Editar</Button><Button variant="danger">Eliminar</Button></th> </tr></>)
+                                    <th scope="col" ><Button onClick={submit} variant="success">Editar</Button><Button variant="danger">Eliminar</Button></th> </tr></>)
                         })}
                     </thead>
                 </table>

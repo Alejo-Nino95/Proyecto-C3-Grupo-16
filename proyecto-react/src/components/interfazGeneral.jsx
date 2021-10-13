@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './interfazGeneral.css';
 import logo from '../imagenes/logo.png';
 import Login from './Login';
 import Producto from './Producto';
+import ModificacionProductos from './ModificacionProductos';
 
 /*  ----------------------------------------------------------------------------------------------
  *
@@ -50,7 +51,13 @@ function InterfazPrincipal() {
                     <h4>InterFaz Ventas</h4>
                 </div>
                 <div className="vista-componente">
-                    <Producto />
+
+                    <BrowserRouter>
+                        <Switch>
+                            <Route exact path="/mod" component={ModificacionProductos} />
+                            <Route exact path="/" component={Producto} />
+                        </Switch>
+                    </BrowserRouter>
                 </div>
             </div>
         </div>
