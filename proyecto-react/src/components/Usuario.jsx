@@ -24,6 +24,8 @@ const data = [
   { id: 66666666, nombre: "Marta", apellido: "Mantilla", correo: "m.m@ram.com", rol:"admin", estado:"pendiente"},
 ];
 
+
+
 class App extends React.Component {
   state = {
     data: data,
