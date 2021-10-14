@@ -6,6 +6,7 @@ import Login from './Login';
 import Ventas from './Ventas';
 import Producto from './Producto';
 import Usuario from './Usuario'; 
+import ModificacionProductos from './ModificacionProductos'
 
 import {
     BrowserRouter as Router,
@@ -85,6 +86,10 @@ function InterfazPrincipal() {
 
                             <Route path="/productos">
                                 <Producto/>
+                            </Route>
+
+                            <Route path="/productos/modificacion">
+                                <ModificacionProductos/>
                             </Route>
 
                             <Route path="/usuarios">
