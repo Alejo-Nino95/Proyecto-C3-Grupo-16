@@ -88,7 +88,7 @@ function InterfazPrincipal() {
                                 <Producto/>
                             </Route>
 
-                            <Route path="/productos/modificacion">
+                            <Route path="/modificacion">
                                 <ModificacionProductos/>
                             </Route>
 
