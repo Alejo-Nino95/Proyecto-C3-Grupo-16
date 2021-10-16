@@ -5,11 +5,12 @@ import './index.css';
 //import Login from './components/Login';
 //import App from './App';
 import InterfazGeneral from './components/interfazGeneral'
+import Enrutador from './rutas';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <InterfazGeneral/>
+    <Enrutador/>
   </React.StrictMode>,
   document.getElementById('root')
 );

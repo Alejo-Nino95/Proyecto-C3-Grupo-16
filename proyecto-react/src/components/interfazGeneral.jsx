@@ -29,84 +29,82 @@ import {
 
 
 
-function InterfazPrincipal() {
-    return (
-    
-      <div className="interfaz-principal">
-          <Router>
-              
-          <div className="items">
-                <div className="img-login">
-                     <img className="user-img" src={logo} alt=""/>
-                </div> 
 
-                <div className="titulo">
-                     <h4></h4>
-                </div>
+class InterfazPrincipal extends React.Component{
+    constructor(propiedaades){
+        super(propiedaades)
+        this.state={
+            componenteActivo:"Bienvenido"
+        }
+    }
 
-                <div className="lista-componentes">
-                    <div className="componente">
-                        <h4 className="link-comp">
-                            <Link to="/usuarios">
-                                     <h4>usuarios</h4>
-                            </Link>
-                        </h4>
-                    </div>
+    cargarUsuarios = () =>{
+        this.setState({
+            componenteActivo:<Usuario/>
+        })
+    }
 
+    cargarProductos = () =>{
+        this.setState({
+            componenteActivo:<Producto/>
+        })
+    }
 
-                    <div className="componente">
-                        <h4 className="link-comp">
-                            <Link to="/productos">
-                                     <h4>Productos</h4>
-                            </Link>
-                        </h4>
-                    </div>
+    cargarVentas = () =>{
+        this.setState({
+            componenteActivo:<Ventas/>
+        })
+    }
 
 
-                    <div className="componente">
-                        <h4 className="link-comp">
-                            <Link to="/ventas">
-                                     <h4>Ventas</h4>
-                            </Link>
-                        </h4>
-                    </div>
 
-                </div>
-          </div>
-
-
-          <div className="vista">
-                 <div className="vista-componente">
-                     
-                        <Switch>
-
-                            <Route path="/login">
-                                <Login/>
-                            </Route>
-
-                            <Route path="/productos">
-                                <Producto/>
-                            </Route>
-
-                            <Route path="/modificacion">
-                                <ModificacionProductos/>
-                            </Route>
-
-                            <Route path="/usuarios">
-                                <Usuario/>
-                            </Route>
-
-                            <Route path="/ventas">
-                                <Ventas/>
-                            </Route>
-
-                        </Switch>
-                     
-                 </div>
-          </div>
-          </Router>
-      </div>
-    );
-  }
+    render(){
+        return(
+            <div className="interfaz-principal">
+            <div className="items">
+                  <div className="img-login">
+                       <img className="user-img" src={logo} alt=""/>
+                  </div> 
   
+                  <div className="titulo">
+                       <h4></h4>
+                  </div>
+  
+                  <div className="lista-componentes">
+                      <div className="componente">
+                          <h4 className="link-comp">
+                             <button className="btn-comp" onClick={this.cargarUsuarios}> Usuarios </button>
+                          </h4>
+                      </div>
+  
+  
+                      <div className="componente">
+                          <h4 className="link-comp">
+                                <button  className="btn-comp" onClick={this.cargarProductos}> Productos </button>
+                          </h4>
+                      </div>
+  
+  
+                      <div className="componente">
+                          <h4 className="link-comp">
+                             <button  className="btn-comp" onClick={this.cargarVentas}> Ventas </button>
+                          </h4>
+                      </div>
+  
+                  </div>
+            </div>
+  
+  
+  
+            <div className="vista">
+                   <div className="vista-componente">
+                        { this.state.componenteActivo }
+                   </div>
+            </div>
+        </div>
+        )
+    }
+}
+
+
   export default InterfazPrincipal;
