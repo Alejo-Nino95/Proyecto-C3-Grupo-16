@@ -13,17 +13,20 @@ body{
 
 .interfaz-principal{
     display: grid;
-    grid-template-columns: 2fr 10fr;
-    height: 50%;
+    width: 100%;
+    grid-template-columns: 3fr 14fr;
    
 }
 
 
+
 .items{
     display: grid;
-    text-align: center;display: flex;
+    text-align: center;
+    display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 
@@ -80,16 +83,18 @@ body{
     margin-bottom: 30px;
     border-radius: 10px;
     width: 80%;
-   
 }
+
+
 
 
 .img-login{
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: cornflowerblue;
-
+    background-color:teal;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -98,6 +103,7 @@ body{
     width: 50%;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-radius: 50%;
 
 }
 
@@ -108,9 +114,7 @@ body{
 }
 
 
-.componente:hover{
-    background-color: rgb(156, 154, 154);
-}
+
 
 .componente-activo{
     width: 100%;
@@ -118,6 +122,8 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
+
+
 .componente-activo h4{
     margin-top: 10px;
     background-color:rgb(126, 42, 42);;
@@ -143,4 +149,19 @@ a{
 }
 a:hover{
     color: black;
+}
+
+.btn-comp{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    border-style: none;
+}
+
+.btn-comp:hover{
+    width: 100%;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+
 }

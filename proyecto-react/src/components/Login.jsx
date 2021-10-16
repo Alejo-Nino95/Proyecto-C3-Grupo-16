@@ -3,17 +3,28 @@ import ReactDOM from 'react-dom';
 import './Login.css';
 import logo from '../imagenes/logo.png'; 
 
-function Login() {
+
+class Login extends React.Component{
+  constructor(props){
+    super(props)
+  }
+
+
+  validarIngreso = () => {
+    this.props.history.push('/main')
+  }
+
+  render(){
     return (
       <div className="Login">
         <div className="contenedor-login">
           <h4>Bienvenido</h4>
-         <div className="img-login">
+         <div className="img-lo">
            <img src={logo} alt="" />
          </div>
 
          <div className="form-login">
-           <form action="">
+           <form action="" onSubmit={this.validarIngreso}>
             <input type="text" placeholder="Usuario" />
             <input type="password"  placeholder="Clave"/>
             <input type="submit" value="Ingresar "/>
@@ -25,5 +36,6 @@ function Login() {
       </div>
     );
   }
-  
-  export default Login;
+}
+
+export default Login;
