@@ -11,7 +11,7 @@ app.use(express.json());
 const db = mysql2.createConnection({
     user:'root',
     host:'localhost',
-    password: '',
+    password: '849019912966serverfitzgerald2021mariadb',
     database: 'empleados',
     port: 12000,
 });
