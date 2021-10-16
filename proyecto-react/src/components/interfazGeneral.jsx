@@ -1,19 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './interfazGeneral.css';
-import logo from '../imagenes/logo.png'; 
+import logo from '../imagenes/user2.jpg'; 
 import Login from './Login';
 import Ventas from './Ventas';
 import Producto from './Producto';
 import Usuario from './Usuario'; 
 import ModificacionProductos from './ModificacionProductos'
+import Bienvenida from './com-welcome/bienvenida';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
 
 /*  ----------------------------------------------------------------------------------------------
@@ -34,7 +29,7 @@ class InterfazPrincipal extends React.Component{
     constructor(propiedaades){
         super(propiedaades)
         this.state={
-            componenteActivo:"Bienvenido"
+            componenteActivo:<Bienvenida/>
         }
     }
 
