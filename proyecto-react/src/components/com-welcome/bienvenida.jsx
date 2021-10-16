@@ -15,8 +15,23 @@ import "./bienvenida.css"
 class Bienvenida extends React.Component{
     constructor(props){
         super(props)
+        this.state = {
+            currentDateTime: Date().toLocaleString()
+          }
     }
 
+
+    refrescarHora = () =>{
+        this.setState({currentDateTime: Date().toLocaleString()})
+    }
+
+
+
+    componentDidMount(){
+       setInterval(() => {
+           this.refrescarHora()
+       }, 1000);
+    }
 
 
 
@@ -30,6 +45,7 @@ class Bienvenida extends React.Component{
                     <div className="introduccion">
                         <p>Bienvenido al portal de administración </p>
                     </div>
+                    <strong> La Hora es : { this.state.currentDateTime }</strong>
                 </div>
             </div>
         )
