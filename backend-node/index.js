@@ -57,6 +57,20 @@ app.get('/empleados', (req, res) => {
 });
 
 
+app.get('/login', (req, res) => {
+    let id = req.user;
+    let queryDB = "SELECT * FROM empleados.usuario WHERE id_usuario = "+id;
+    console.log("QUERY : "+queryDB);
+    db.query(queryDB,(err, result) => {
+        if (err){
+           console.log(err);     
+        } else {
+            res.send(result);
+        }
+    });
+});
+
+
 
 app.listen(5000, ()=>{
     console.log('Server is running on 5000');

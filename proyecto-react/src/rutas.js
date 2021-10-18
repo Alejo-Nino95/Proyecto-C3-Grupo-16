@@ -12,7 +12,7 @@ export default function Enrutador(){
    return(
     <Router>
         <Switch>
-            <Route exact path = "/" component={ Peticiones }/>
+            <Route exact path = "/" component={ Login }/>
             <Route exact path = "/main" component={InterfazPrincipal}/>
             <Route exact path = "/modificacion" component={ModificacionProductos}/>
         </Switch>
