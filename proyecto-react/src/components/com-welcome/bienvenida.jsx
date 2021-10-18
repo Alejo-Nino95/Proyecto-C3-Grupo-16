@@ -12,6 +12,7 @@ import "./bienvenida.css"
  */ 
 
 
+
 class Bienvenida extends React.Component{
     constructor(props){
         super(props)
