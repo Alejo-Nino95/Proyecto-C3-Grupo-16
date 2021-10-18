@@ -33,6 +33,13 @@ class InterfazPrincipal extends React.Component{
         }
     }
 
+
+    cargarInicio = () =>{
+        this.setState({
+            componenteActivo:<Bienvenida/>
+        })
+    }
+
     cargarUsuarios = () =>{
         this.setState({
             componenteActivo:<Usuario/>
@@ -66,6 +73,16 @@ class InterfazPrincipal extends React.Component{
                   </div>
   
                   <div className="lista-componentes">
+
+
+
+                     <div className="componente">
+                          <h4 className="link-comp">
+                             <button className="btn-comp" onClick={this.cargarInicio}>  Inicio </button>
+                          </h4>
+                      </div>
+
+
                       <div className="componente">
                           <h4 className="link-comp">
                              <button className="btn-comp" onClick={this.cargarUsuarios}> Usuarios </button>
