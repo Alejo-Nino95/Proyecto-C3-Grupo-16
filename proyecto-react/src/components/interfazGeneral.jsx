@@ -8,6 +8,7 @@ import Producto from './Producto';
 import Usuario from './Usuario'; 
 import ModificacionProductos from './ModificacionProductos'
 import Bienvenida from './com-welcome/bienvenida';
+import { Link } from 'react-router-dom';
 
 
 
@@ -31,6 +32,7 @@ class InterfazPrincipal extends React.Component{
         this.state={
             componenteActivo:<Bienvenida/>
         }
+
     }
 
 
@@ -58,6 +60,9 @@ class InterfazPrincipal extends React.Component{
         })
     }
 
+    salirInterfaz = () => {
+        document.location.href = "/"
+    }
 
 
     render(){
@@ -100,6 +105,13 @@ class InterfazPrincipal extends React.Component{
                       <div className="componente">
                           <h4 className="link-comp">
                              <button  className="btn-comp" onClick={this.cargarVentas}> Ventas </button>
+                          </h4>
+                      </div>
+
+
+                      <div className="componente">
+                          <h4 className="link-comp">
+                             <button  className="btn-comp" onClick={this.salirInterfaz}> Salir </button>
                           </h4>
                       </div>
   
