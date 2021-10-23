@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './Login.css';
 import logo from '../imagenes/logo.png'; 
 import axios from 'axios';
+import {GoogleLogin, responseGoogle , GoogleLoginResponse }from 'react-google-login';
+
 
 class Login extends React.Component{
   constructor(props){
@@ -10,10 +12,10 @@ class Login extends React.Component{
   }
 
 
-  validarIngreso = () => {
-
+  onSuccess = (res) =>{
     this.props.history.push('/main')
   }
+
 
   render(){
     return (
@@ -29,7 +31,15 @@ class Login extends React.Component{
             <input type="text" placeholder="Usuario" value=""/>
             <input type="password"  placeholder="Clave"/>
             <input type="submit" value="Ingresar "/>
-            <input type="submit" value="Google "/>
+            <h3/>
+            <GoogleLogin
+                clientId="45218908813-i9kuh9o3j2rhi6sqkf48fiuu9t734ln6.apps.googleusercontent.com"
+                buttonText="Login with Google"
+                onSuccess={this.onSuccess}
+                onFailure={responseGoogle}
+                cookiePolicy="single_host_origin"
+                
+/>
           </form>
          </div>
 
