@@ -16,6 +16,17 @@ class Login extends React.Component{
     this.props.history.push('/main')
   }
 
+  onFailure = (res) =>{
+    alert("La autenticacion falló ");
+  }
+
+/*
+
+            <input type="text" placeholder="Usuario" value=""/>
+            <input type="password"  placeholder="Clave"/>
+            <input type="submit" value="Ingresar "/>
+*/
+
 
   render(){
     return (
@@ -28,18 +39,14 @@ class Login extends React.Component{
 
          <div className="form-login">
            <form action="" onSubmit={this.validarIngreso}>
-            <input type="text" placeholder="Usuario" value=""/>
-            <input type="password"  placeholder="Clave"/>
-            <input type="submit" value="Ingresar "/>
+            
             <h3/>
             <GoogleLogin
                 clientId="45218908813-i9kuh9o3j2rhi6sqkf48fiuu9t734ln6.apps.googleusercontent.com"
                 buttonText="Login with Google"
                 onSuccess={this.onSuccess}
-                onFailure={responseGoogle}
-                cookiePolicy="single_host_origin"
-                
-/>
+                onFailure={this.onFailure}
+                cookiePolicy="single_host_origin"/>
           </form>
          </div>
 
